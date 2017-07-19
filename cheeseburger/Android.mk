@@ -28,8 +28,6 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := EXECUTABLES
 include $(BUILD_PREBUILT)
 
-
-ifeq ($(QCPATH),)
 include $(CLEAR_VARS)
 LOCAL_MODULE := libloc_api_v02
 LOCAL_MODULE_OWNER := oneplus
@@ -50,6 +48,17 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libril
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES_64 := proprietary/lib64/libril.so
+LOCAL_SRC_FILES_32 := proprietary/lib/libril.so
+LOCAL_MULTILIB := both
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -259,12 +268,7 @@ LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
-endif
-
-ifneq ($(TARGET_HAVE_QC_PERF),true)
-
-endif
-
 $(shell mkdir -p $(PRODUCT_OUT)/system/vendor/lib/egl && pushd $(PRODUCT_OUT)/system/vendor/lib > /dev/null && ln -sf egl/libEGL_adreno.so libEGL_adreno.so && popd > /dev/null)
 $(shell mkdir -p $(PRODUCT_OUT)/system/vendor/lib64/egl && pushd $(PRODUCT_OUT)/system/vendor/lib64 > /dev/null && ln -sf egl/libEGL_adreno.so libEGL_adreno.so && popd > /dev/null)
+
 endif
