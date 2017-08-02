@@ -115,8 +115,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/etc/firmware/a540_zap.b02:system/etc/firmware/a540_zap.b02 \
     vendor/oneplus/cheeseburger/proprietary/etc/firmware/a540_zap.elf:system/etc/firmware/a540_zap.elf \
     vendor/oneplus/cheeseburger/proprietary/etc/firmware/a540_zap.mdt:system/etc/firmware/a540_zap.mdt \
-    vendor/oneplus/cheeseburger/proprietary/etc/firmware/cpp_firmware_v1_10_0.fw:system/etc/firmware/cpp_firmware_v1_10_0.fw \
-    vendor/oneplus/cheeseburger/proprietary/etc/firmware/cpp_firmware_v1_12_0.fw:system/etc/firmware/cpp_firmware_v1_12_0.fw \
     vendor/oneplus/cheeseburger/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
     vendor/oneplus/cheeseburger/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
     vendor/oneplus/cheeseburger/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
@@ -125,6 +123,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/etc/firmware/cpp_firmware_v1_5_2.fw:system/etc/firmware/cpp_firmware_v1_5_2.fw \
     vendor/oneplus/cheeseburger/proprietary/etc/firmware/cpp_firmware_v1_6_0.fw:system/etc/firmware/cpp_firmware_v1_6_0.fw \
     vendor/oneplus/cheeseburger/proprietary/etc/firmware/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw \
+    vendor/oneplus/cheeseburger/proprietary/etc/firmware/cpp_firmware_v1_10_0.fw:system/etc/firmware/cpp_firmware_v1_10_0.fw \
+    vendor/oneplus/cheeseburger/proprietary/etc/firmware/cpp_firmware_v1_12_0.fw:system/etc/firmware/cpp_firmware_v1_12_0.fw \
     vendor/oneplus/cheeseburger/proprietary/etc/firmware/ipa_fws.b00:system/etc/firmware/ipa_fws.b00 \
     vendor/oneplus/cheeseburger/proprietary/etc/firmware/ipa_fws.b01:system/etc/firmware/ipa_fws.b01 \
     vendor/oneplus/cheeseburger/proprietary/etc/firmware/ipa_fws.b02:system/etc/firmware/ipa_fws.b02 \
@@ -323,6 +323,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_3a_hq.so:system/vendor/lib/libchromatix_imx398_3a_hq.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_3a_manual.so:system/vendor/lib/libchromatix_imx398_3a_manual.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_3a_panorama.so:system/vendor/lib/libchromatix_imx398_3a_panorama.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_3a_wechat_preview.so:system/vendor/lib/libchromatix_imx398_3a_wechat_preview.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_common.so:system/vendor/lib/libchromatix_imx398_common.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_cpp_1476x834_120fps_video.so:system/vendor/lib/libchromatix_imx398_cpp_1476x834_120fps_video.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_cpp_2328x1304_60fps_video.so:system/vendor/lib/libchromatix_imx398_cpp_2328x1304_60fps_video.so \
@@ -345,7 +346,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_isp_4656x3496_30fps_snapshot.so:system/vendor/lib/libchromatix_imx398_isp_4656x3496_30fps_snapshot.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_isp_manual.so:system/vendor/lib/libchromatix_imx398_isp_manual.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_isp_panorama.so:system/vendor/lib/libchromatix_imx398_isp_panorama.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_isp_zsl_snapshot.so:system/vendor/lib/libchromatix_imx398_isp_zsl_snapshot.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_postproc.so:system/vendor/lib/libchromatix_imx398_postproc.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_preview_1080p_cpp.so:system/vendor/lib/libchromatix_imx398_preview_1080p_cpp.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
