@@ -1265,7 +1265,7 @@
       <data name="initial_ssthresh" type="int"> 1400 </data>
 
       <data name="pnd_rps_mask" type="int"> 2 </data>
-      <data name="vnd_rps_mask" type="int"> 4 </data>
+      <data name="vnd_rps_mask" type="int"> 6 </data>
       <data name="clat_rps_mask" type="int"> 8 </data>
       <data name="netdev_budget" type="int"> 0 </data>
       <data name="low_latency_filters" type="int"> 0 </data>
@@ -1363,7 +1363,7 @@
       <data name="initial_ssthresh" type="int"> 1400 </data>
 
       <data name="pnd_rps_mask" type="int"> 2 </data>
-      <data name="vnd_rps_mask" type="int"> 4 </data>
+      <data name="vnd_rps_mask" type="int"> 6 </data>
       <data name="clat_rps_mask" type="int"> 8 </data>
       <data name="netdev_budget" type="int"> 0 </data>
       <data name="low_latency_filters" type="int"> 0 </data>
