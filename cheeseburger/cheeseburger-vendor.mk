@@ -16,6 +16,7 @@
 
 PRODUCT_PACKAGES += \
     libloc_api_v02 \
+    libbtnv \
     libgpustats \
     libsdm-disp-apis \
     libthermalclient \
@@ -48,6 +49,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/oneplus/cheeseburger/proprietary/bin/energy-awareness:system/bin/energy-awareness \
     vendor/oneplus/cheeseburger/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
+    vendor/oneplus/cheeseburger/proprietary/bin/ifaadaemon:system/bin/ifaadaemon \
     vendor/oneplus/cheeseburger/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
     vendor/oneplus/cheeseburger/proprietary/bin/imscmservice:system/bin/imscmservice \
     vendor/oneplus/cheeseburger/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
@@ -206,7 +208,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/etc/permissions/qti-vzw-ims-internal.xml:system/etc/permissions/qti-vzw-ims-internal.xml \
     vendor/oneplus/cheeseburger/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/oneplus/cheeseburger/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/sensors/hals.conf:system/etc/sensors/hals.conf \
     vendor/oneplus/cheeseburger/proprietary/etc/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
     vendor/oneplus/cheeseburger/proprietary/etc/thermal-engine.conf:system/etc/thermal-engine.conf \
     vendor/oneplus/cheeseburger/proprietary/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
@@ -245,6 +246,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/lib/libopposfr.so:system/lib/libopposfr.so \
     vendor/oneplus/cheeseburger/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/oneplus/cheeseburger/proprietary/lib/libSensorManagerHAL.so:system/lib/libSensorManagerHAL.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libteeclientjni.so:system/lib/libteeclientjni.so \
     vendor/oneplus/cheeseburger/proprietary/lib/libVDBlurlessAPI.so:system/lib/libVDBlurlessAPI.so \
     vendor/oneplus/cheeseburger/proprietary/lib/libVDHDRAPI.so:system/lib/libVDHDRAPI.so \
     vendor/oneplus/cheeseburger/proprietary/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
@@ -258,6 +260,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/lib64/libloc_ds_api.so:system/lib64/libloc_ds_api.so \
     vendor/oneplus/cheeseburger/proprietary/lib64/libOmxVpp.so:system/lib64/libOmxVpp.so \
     vendor/oneplus/cheeseburger/proprietary/lib64/libparam.so:system/lib64/libparam.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libteeclientjni.so:system/lib64/libteeclientjni.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libteeclientjniv2.so:system/lib64/libteeclientjniv2.so \
     vendor/oneplus/cheeseburger/proprietary/lib64/libvpplibrary.so:system/lib64/libvpplibrary.so \
     vendor/oneplus/cheeseburger/proprietary/lib64/sensors.hal.tof.so:system/lib64/sensors.hal.tof.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/bin/mm-pp-dpps:system/vendor/bin/mm-pp-dpps \
@@ -272,6 +276,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/qvr/qvrservice_6dof_config.xml:system/vendor/etc/qvr/qvrservice_6dof_config.xml \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/qvr/qvrservice_config.txt:system/vendor/etc/qvr/qvrservice_config.txt \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/sensors/hals.conf:system/vendor/etc/sensors/hals.conf \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/perf-profile0.conf:system/vendor/etc/perf-profile0.conf \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/perf-profile1.conf:system/vendor/etc/perf-profile1.conf \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/perf-profile2.conf:system/vendor/etc/perf-profile2.conf \
@@ -308,7 +313,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libblurbuster.so:system/vendor/lib/libblurbuster.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libc2d30-a5xx.so:system/vendor/lib/libc2d30-a5xx.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libc2d30_bltlib.so:system/vendor/lib/libc2d30_bltlib.so \
@@ -682,9 +686,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libalarmservice_jni.so:system/vendor/lib64/libalarmservice_jni.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libaudcal.so:system/vendor/lib64/libaudcal.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libbccQTI.so:system/vendor/lib64/libbccQTI.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libblurbuster.so:system/vendor/lib64/libblurbuster.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libbtnv.so:system/vendor/lib64/libbtnv.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libC2D2.so:system/vendor/lib64/libC2D2.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libc2d30-a5xx.so:system/vendor/lib64/libc2d30-a5xx.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libc2d30_bltlib.so:system/vendor/lib64/libc2d30_bltlib.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libCB.so:system/vendor/lib64/libCB.so \
