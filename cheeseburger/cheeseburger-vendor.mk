@@ -28,15 +28,10 @@ PRODUCT_PACKAGES += \
     datastatusnotification \
     embms \
     shutdownlistener \
-    CNEService \
     QtiTetherService \
     com.qualcomm.location \
-    dpmserviceapp \
     qcrilmsgtunnel \
     colorservice \
-    ims \
-    imssettings \
-    org.simalliance.openmobileapi \
     qcnvitems \
     qcrilhook
 
