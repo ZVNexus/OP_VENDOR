@@ -95,7 +95,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/etc/oneplus3_vstab_db_1080p_video_1.config:system/etc/oneplus3_vstab_db_1080p_video_1.config \
     vendor/oneplus/oneplus3/proprietary/etc/oneplus3_vstab_db_720p_video_0.config:system/etc/oneplus3_vstab_db_720p_video_0.config \
     vendor/oneplus/oneplus3/proprietary/etc/oneplus3_vstab_db_720p_video_1.config:system/etc/oneplus3_vstab_db_720p_video_1.config \
-    vendor/oneplus/oneplus3/proprietary/etc/sensors/hals.conf:system/etc/sensors/hals.conf \
+    vendor/oneplus/oneplus3/proprietary/vendor/etc/sensors/hals.conf:system/vendor/etc/sensors/hals.conf \
     vendor/oneplus/oneplus3/proprietary/etc/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
     vendor/oneplus/oneplus3/proprietary/lib/TC_Bayer_Converter_v6_core_opt.bin:system/lib/TC_Bayer_Converter_v6_core_opt.bin \
     vendor/oneplus/oneplus3/proprietary/lib/hw/camera.msm8996.so:system/lib/hw/camera.msm8996.so \
@@ -157,7 +157,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/lib/qpd_dspcl_v2.bin:system/lib/qpd_dspcl_v2.bin \
     vendor/oneplus/oneplus3/proprietary/lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so:system/lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so \
     vendor/oneplus/oneplus3/proprietary/lib/rfsa/adsp/libmorpho_video_denoiser_hvx_skel.so:system/lib/rfsa/adsp/libmorpho_video_denoiser_hvx_skel.so \
-    vendor/oneplus/oneplus3/proprietary/lib64/hw/fingerprint.msm8996.so:system/lib64/hw/fingerprint.msm8996.so \
+    vendor/oneplus/oneplus3/proprietary/lib64/hw/fingerprint.vendor.msm8996.so:system/lib64/hw/fingerprint.vendor.msm8996.so \
     vendor/oneplus/oneplus3/proprietary/lib64/lib_fpc_tac_shared.so:system/lib64/lib_fpc_tac_shared.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libparam.so:system/lib64/libparam.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libteeclientjni.so:system/lib64/libteeclientjni.so \
@@ -423,7 +423,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libremosaic_daemon.so:system/vendor/lib64/libremosaic_daemon.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libremosaic_tuning.so:system/vendor/lib64/libremosaic_tuning.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libremosaiclib.so:system/vendor/lib64/libremosaiclib.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib64/qfp.wakeup.so:system/vendor/lib64/qfp.wakeup.so
+    vendor/oneplus/oneplus3/proprietary/vendor/lib64/qfp.wakeup.so:system/vendor/lib64/qfp.wakeup.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libprotobuf-cpp-fool.so:system/vendor/lib64/libprotobuf-cpp-fool.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libprotobuf-cpp-late.so:system/vendor/lib64/libprotobuf-cpp-late.so
 
 PRODUCT_PACKAGES += \
     dashd
@@ -512,7 +514,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/etc/permissions/qti-vzw-ims-internal.xml:system/etc/permissions/qti-vzw-ims-internal.xml \
     vendor/oneplus/oneplus3/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/oneplus/oneplus3/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
-    vendor/oneplus/oneplus3/proprietary/etc/thermal-engine.conf:system/etc/thermal-engine.conf \
     vendor/oneplus/oneplus3/proprietary/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
     vendor/oneplus/oneplus3/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
     vendor/oneplus/oneplus3/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
@@ -834,14 +835,10 @@ PRODUCT_PACKAGES += \
     embms \
     fastdormancy \
     shutdownlistener \
-    CNEService \
     QtiTetherService \
     com.qualcomm.location \
-    dpmserviceapp \
     qcrilmsgtunnel \
     colorservice \
-    ims \
-    imssettings \
     qcnvitems \
     qcrilhook
 endif
