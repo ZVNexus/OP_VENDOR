@@ -203,6 +203,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/etc/permissions/qti-vzw-ims-internal.xml:system/etc/permissions/qti-vzw-ims-internal.xml \
     vendor/oneplus/cheeseburger/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/oneplus/cheeseburger/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
+    vendor/oneplus/cheeseburger/proprietary/etc/qvop/antispoofing.bin:system/etc/qvop/antispoofing.bin \
+    vendor/oneplus/cheeseburger/proprietary/etc/qvop/cmudict.bin:system/etc/qvop/cmudict.bin \
+    vendor/oneplus/cheeseburger/proprietary/etc/qvop/noisesample.bin:system/etc/qvop/noisesample.bin \
+    vendor/oneplus/cheeseburger/proprietary/etc/qvop/poc_64_hmm.gmm:system/etc/qvop/poc_64_hmm.gmm \
     vendor/oneplus/cheeseburger/proprietary/etc/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
     vendor/oneplus/cheeseburger/proprietary/etc/thermal-engine.conf:system/etc/thermal-engine.conf \
     vendor/oneplus/cheeseburger/proprietary/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
@@ -272,6 +276,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/qvr/qvrservice_6dof_config.xml:system/vendor/etc/qvr/qvrservice_6dof_config.xml \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/qvr/qvrservice_config.txt:system/vendor/etc/qvr/qvrservice_config.txt \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/sensors/hals.conf:system/vendor/etc/sensors/hals.conf \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/diracvdd.bin:system/vendor/etc/diracvdd.bin \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/perf-profile0.conf:system/vendor/etc/perf-profile0.conf \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/perf-profile1.conf:system/vendor/etc/perf-profile1.conf \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/perf-profile2.conf:system/vendor/etc/perf-profile2.conf \
