@@ -853,3 +853,14 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc:system/vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/liboemcrypto.so:system/vendor/lib/liboemcrypto.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libcppf.so:system/vendor/lib/libcppf.so
+
+# AptX BT
+PRODUCT_COPY_FILES += \
+    vendor/oneplus/cheeseburger/proprietary/lib/libaptXHD_encoder.so:system/lib/libaptXHD_encoder.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libaptX_encoder.so:system/lib/libaptX_encoder.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libldacBT_abr.so:system/lib/libldacBT_abr.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libldacBT_enc.so:system/lib/libldacBT_enc.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libaptXHD_encoder.so:system/lib64/libaptXHD_encoder.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libaptX_encoder.so:system/lib64/libaptX_encoder.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libldacBT_abr.so:system/lib64/libldacBT_abr.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libldacBT_enc.so:system/lib64/libldacBT_enc.so
