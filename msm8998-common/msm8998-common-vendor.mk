@@ -107,6 +107,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/etc/oneplus5_vstab_db_4k_video_0_30fps.config:system/etc/oneplus5_vstab_db_4k_video_0_30fps.config \
     vendor/oneplus/msm8998-common/proprietary/etc/oneplus5_vstab_db_720p_video_0_30fps.config:system/etc/oneplus5_vstab_db_720p_video_0_30fps.config \
     vendor/oneplus/msm8998-common/proprietary/etc/oneplus5_vstab_db_720p_video_1_30fps.config:system/etc/oneplus5_vstab_db_720p_video_1_30fps.config \
+    vendor/oneplus/msm8998-common/proprietary/etc/oneplus5T_vstab_db_1080p_video_0_30fps.config:system/etc/oneplus5T_vstab_db_1080p_video_0_30fps.config \
+    vendor/oneplus/msm8998-common/proprietary/etc/oneplus5T_vstab_db_1080p_video_0_60fps.config:system/etc/oneplus5T_vstab_db_1080p_video_0_60fps.config \
+    vendor/oneplus/msm8998-common/proprietary/etc/oneplus5T_vstab_db_1080p_video_1_30fps.config:system/etc/oneplus5T_vstab_db_1080p_video_1_30fps.config \
+    vendor/oneplus/msm8998-common/proprietary/etc/oneplus5T_vstab_db_4k_video_0_30fps.config:system/etc/oneplus5T_vstab_db_4k_video_0_30fps.config \
+    vendor/oneplus/msm8998-common/proprietary/etc/oneplus5T_vstab_db_720p_video_0_30fps.config:system/etc/oneplus5T_vstab_db_720p_video_0_30fps.config \
+    vendor/oneplus/msm8998-common/proprietary/etc/oneplus5T_vstab_db_720p_video_1_30fps.config:system/etc/oneplus5T_vstab_db_720p_video_1_30fps.config \
     vendor/oneplus/msm8998-common/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
     vendor/oneplus/msm8998-common/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
     vendor/oneplus/msm8998-common/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
