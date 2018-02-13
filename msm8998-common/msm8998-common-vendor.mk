@@ -580,6 +580,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx376k_postproc.so:system/vendor/lib/libchromatix_imx376k_postproc.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_3a_1476x834_120fps_video.so:system/vendor/lib/libchromatix_imx398_3a_1476x834_120fps_video.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_3a_2328x1304_60fps_video.so:system/vendor/lib/libchromatix_imx398_3a_2328x1304_60fps_video.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_3a_3264x2448_24fps_preview_bokeh.so:system/vendor/lib/libchromatix_imx398_3a_3264x2448_24fps_preview_bokeh.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_3a_3264x2448_30fps_preview_bokeh.so:system/vendor/lib/libchromatix_imx398_3a_3264x2448_30fps_preview_bokeh.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_3a_4608x3456_30fps_preview_bokeh.so:system/vendor/lib/libchromatix_imx398_3a_4608x3456_30fps_preview_bokeh.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_3a_4656x2608_30fps_preview.so:system/vendor/lib/libchromatix_imx398_3a_4656x2608_30fps_preview.so \
@@ -660,8 +661,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libllvm-qgl.so:system/vendor/lib/libllvm-qgl.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libloc_core.so:system/vendor/lib/libloc_core.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libloc_ds_api.so:system/vendor/lib/libloc_ds_api.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libloc_externalDr.so:system/vendor/lib/libloc_externalDr.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libloc_pla.so:system/vendor/lib/libloc_pla.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libloc_stub.so:system/vendor/lib/libloc_stub.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/liblocation_api.so:system/vendor/lib/liblocation_api.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/liblocationservice_glue.so:system/vendor/lib/liblocationservice_glue.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
@@ -1024,8 +1029,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libllvm-glnext.so:system/vendor/lib64/libllvm-glnext.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libllvm-qcom.so:system/vendor/lib64/libllvm-qcom.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libllvm-qgl.so:system/vendor/lib64/libllvm-qgl.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libloc_core.so:system/vendor/lib64/libloc_core.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libloc_ds_api.so:system/vendor/lib64/libloc_ds_api.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libloc_externalDr.so:system/vendor/lib64/libloc_externalDr.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libloc_pla.so:system/vendor/lib64/libloc_pla.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libloc_stub.so:system/vendor/lib64/libloc_stub.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/liblocation_api.so:system/vendor/lib64/liblocation_api.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/liblocationservice.so:system/vendor/lib64/liblocationservice.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/liblocationservice_glue.so:system/vendor/lib64/liblocationservice_glue.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/liblowi_client.so:system/vendor/lib64/liblowi_client.so \
