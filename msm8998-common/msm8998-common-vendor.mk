@@ -28,6 +28,7 @@ PRODUCT_PACKAGES += \
     dpmserviceapp \
     qcrilmsgtunnel \
     TimeService \
+    aptxui \
     colorservice \
     IFAAService \
     SmartcardService \
@@ -266,6 +267,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/lib64/libjni_trueportrait.so:system/lib64/libjni_trueportrait.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libjni_truescanner_v2.so:system/lib64/libjni_truescanner_v2.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libjni_ubifocus.so:system/lib64/libjni_ubifocus.so \
+    vendor/oneplus/msm8998-common/proprietary/lib64/libldacBT_abr.so:system/lib64/libldacBT_abr.so \
+    vendor/oneplus/msm8998-common/proprietary/lib64/libldacBT_enc.so:system/lib64/libldacBT_enc.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/liblocationservice_jni.so:system/lib64/liblocationservice_jni.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libmmrtpdecoder.so:system/lib64/libmmrtpdecoder.so \
@@ -398,6 +401,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/sensors/sensor_def_qcomdev.conf:system/vendor/etc/sensors/sensor_def_qcomdev.conf \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/cacert_location.pem:system/vendor/etc/cacert_location.pem \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/diracvdd.bin:system/vendor/etc/diracvdd.bin \
+    vendor/oneplus/msm8998-common/proprietary/vendor/etc/powerhint.xml:system/vendor/etc/powerhint.xml \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/thermal-engine.conf:system/vendor/etc/thermal-engine.conf \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/xtra_root_cert.pem:system/vendor/etc/xtra_root_cert.pem \
     vendor/oneplus/msm8998-common/proprietary/vendor/firmware/a225_pfp.fw:system/vendor/firmware/a225_pfp.fw \
