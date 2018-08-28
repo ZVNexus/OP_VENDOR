@@ -350,7 +350,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/lib64/vendor.qti.hardware.tui_comm@1.0.so:system/lib64/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/vendor.qti.hardware.vpp@1.1.so:system/lib64/vendor.qti.hardware.vpp@1.1.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so \
-    vendor/oneplus/msm8998-common/proprietary/vendor/bin/adsprpcd:system/vendor/bin/adsprpcd \
+    vendor/oneplus/msm8998-common/proprietary/vendor/bin/adsprpcd:vendor/bin/adsprpcd \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/btnvtool:system/vendor/bin/btnvtool \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/cnd:system/vendor/bin/cnd \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/cnss-daemon:system/vendor/bin/cnss-daemon \
