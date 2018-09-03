@@ -923,6 +923,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libqtigef.so:system/vendor/lib/libqtigef.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libqvop-service.so:system/vendor/lib/libqvop-service.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/librmnetctl.so:vendor/lib/librmnetctl.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
@@ -1187,6 +1188,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libril-qc-qmi-1.so:system/vendor/lib64/libril-qc-qmi-1.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libril-qc-radioconfig.so:system/vendor/lib64/libril-qc-radioconfig.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libril-qcril-hook-oem.so:system/vendor/lib64/libril-qcril-hook-oem.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/librmnetctl.so:vendor/lib64/librmnetctl.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/librilqmiservices.so:system/vendor/lib64/librilqmiservices.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/librpmb.so:system/vendor/lib64/librpmb.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/librs_adreno.so:system/vendor/lib64/librs_adreno.so \
