@@ -49,8 +49,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/oneplus/msm8998-common/proprietary/bin/ifaadaemon:system/bin/ifaadaemon \
-    vendor/oneplus/msm8998-common/proprietary/bin/spdaemon:system/bin/spdaemon \
-    vendor/oneplus/msm8998-common/proprietary/bin/wfdservice:system/bin/wfdservice \
+    vendor/oneplus/msm8998-common/proprietary/bin/spdaemon:vendor/bin/spdaemon \
+    vendor/oneplus/msm8998-common/proprietary/bin/wfdservice:vendor/bin/wfdservice \
     vendor/oneplus/msm8998-common/proprietary/etc/camera/ashdr/iso617_4608x3456.ncf:system/etc/camera/ashdr/iso617_4608x3456.ncf \
     vendor/oneplus/msm8998-common/proprietary/etc/camera/ashdr/ncf_pack.ncf:system/etc/camera/ashdr/ncf_pack.ncf \
     vendor/oneplus/msm8998-common/proprietary/etc/camera/attribute.model:system/etc/camera/attribute.model \
@@ -234,7 +234,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/lib/vendor.display.color@1.0.so:system/lib/vendor.display.color@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/lib/vendor.display.postproc@1.0.so:system/lib/vendor.display.postproc@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/lib/vendor.qti.esepowermanager@1.0.so:system/lib/vendor.qti.esepowermanager@1.0.so \
-    vendor/oneplus/msm8998-common/proprietary/lib/vendor.qti.gnss@1.0.so:vendor/lib/vendor.qti.gnss@1.0.so \
+    vendor/oneplus/msm8998-common/proprietary/lib/vendor.qti.gnss@1.0.so:system/lib/vendor.qti.gnss@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/lib/vendor.qti.hardware.camera.device@1.0.so:system/lib/vendor.qti.hardware.camera.device@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/lib/vendor.qti.hardware.data.latency@1.0.so:system/lib/vendor.qti.hardware.data.latency@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/lib/vendor.qti.hardware.improvetouch.blobmanager@1.0.so:system/lib/vendor.qti.hardware.improvetouch.blobmanager@1.0.so \
@@ -336,7 +336,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/lib64/vendor.display.color@1.0.so:system/lib64/vendor.display.color@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/vendor.display.postproc@1.0.so:system/lib64/vendor.display.postproc@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/vendor.qti.esepowermanager@1.0.so:system/lib64/vendor.qti.esepowermanager@1.0.so \
-    vendor/oneplus/msm8998-common/proprietary/lib64/vendor.qti.gnss@1.0.so:vendor/lib64/vendor.qti.gnss@1.0.so \
+    vendor/oneplus/msm8998-common/proprietary/lib64/vendor.qti.gnss@1.0.so:system/lib64/vendor.qti.gnss@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/vendor.qti.hardware.camera.device@1.0.so:system/lib64/vendor.qti.hardware.camera.device@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/vendor.qti.hardware.data.latency@1.0.so:system/lib64/vendor.qti.hardware.data.latency@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/vendor.qti.hardware.improvetouch.blobmanager@1.0.so:system/lib64/vendor.qti.hardware.improvetouch.blobmanager@1.0.so \
@@ -353,45 +353,45 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/adsprpcd:vendor/bin/adsprpcd \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/btnvtool:system/vendor/bin/btnvtool \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/cnd:system/vendor/bin/cnd \
-    vendor/oneplus/msm8998-common/proprietary/vendor/bin/cnss-daemon:system/vendor/bin/cnss-daemon \
-    vendor/oneplus/msm8998-common/proprietary/vendor/bin/cnss_diag:system/vendor/bin/cnss_diag \
+    vendor/oneplus/msm8998-common/proprietary/vendor/bin/cnss-daemon:vendor/bin/cnss-daemon \
+    vendor/oneplus/msm8998-common/proprietary/vendor/bin/cnss_diag:vendor/bin/cnss_diag \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/dpmQmiMgr:system/vendor/bin/dpmQmiMgr \
-    vendor/oneplus/msm8998-common/proprietary/vendor/bin/energy-awareness:system/vendor/bin/energy-awareness \
-    vendor/oneplus/msm8998-common/proprietary/vendor/bin/hbtp_daemon:system/vendor/bin/hbtp_daemon \
+    vendor/oneplus/msm8998-common/proprietary/vendor/bin/energy-awareness:vendor/bin/energy-awareness \
+    vendor/oneplus/msm8998-common/proprietary/vendor/bin/hbtp_daemon:vendor/bin/hbtp_daemon \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/hci_qcomm_init:system/vendor/bin/hci_qcomm_init \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/hdcp1prov:system/vendor/bin/hdcp1prov \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/hdcp2p2prov:system/vendor/bin/hdcp2p2prov \
-    vendor/oneplus/msm8998-common/proprietary/vendor/bin/ims_rtp_daemon:system/vendor/bin/ims_rtp_daemon \
-    vendor/oneplus/msm8998-common/proprietary/vendor/bin/imsdatadaemon:system/vendor/bin/imsdatadaemon \
-    vendor/oneplus/msm8998-common/proprietary/vendor/bin/imsqmidaemon:system/vendor/bin/imsqmidaemon \
-    vendor/oneplus/msm8998-common/proprietary/vendor/bin/imsrcsd:system/vendor/bin/imsrcsd \
+    vendor/oneplus/msm8998-common/proprietary/vendor/bin/ims_rtp_daemon:vendor/bin/ims_rtp_daemon \
+    vendor/oneplus/msm8998-common/proprietary/vendor/bin/imsdatadaemon:vendor/bin/imsdatadaemon \
+    vendor/oneplus/msm8998-common/proprietary/vendor/bin/imsqmidaemon:vendor/bin/imsqmidaemon \
+    vendor/oneplus/msm8998-common/proprietary/vendor/bin/imsrcsd:vendor/bin/imsrcsd \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/irsc_util:system/vendor/bin/irsc_util \
-    vendor/oneplus/msm8998-common/proprietary/vendor/bin/loc_launcher:system/vendor/bin/loc_launcher \
+    vendor/oneplus/msm8998-common/proprietary/vendor/bin/loc_launcher:vendor/bin/loc_launcher \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/lowi-server:system/vendor/bin/lowi-server \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/mm-pp-dpps:system/vendor/bin/mm-pp-dpps \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/msm_irqbalance:system/vendor/bin/msm_irqbalance \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/netmgrd:vendor/bin/netmgrd \
-    vendor/oneplus/msm8998-common/proprietary/vendor/bin/pd-mapper:system/vendor/bin/pd-mapper \
+    vendor/oneplus/msm8998-common/proprietary/vendor/bin/pd-mapper:vendor/bin/pd-mapper \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/pm-proxy:system/vendor/bin/pm-proxy \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/pm-service:system/vendor/bin/pm-service \
-    vendor/oneplus/msm8998-common/proprietary/vendor/bin/port-bridge:system/vendor/bin/port-bridge \
+    vendor/oneplus/msm8998-common/proprietary/vendor/bin/port-bridge:vendor/bin/port-bridge \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/qseecomd:system/vendor/bin/qseecomd \
-    vendor/oneplus/msm8998-common/proprietary/vendor/bin/qti:system/vendor/bin/qti \
+    vendor/oneplus/msm8998-common/proprietary/vendor/bin/qti:vendor/bin/qti \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/qvop-daemon:system/vendor/bin/qvop-daemon \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/rmt_storage:system/vendor/bin/rmt_storage \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/sensors.qcom:system/vendor/bin/sensors.qcom \
-    vendor/oneplus/msm8998-common/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
+    vendor/oneplus/msm8998-common/proprietary/vendor/bin/slim_daemon:vendor/bin/slim_daemon \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/tftp_server:system/vendor/bin/tftp_server \
-    vendor/oneplus/msm8998-common/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
-    vendor/oneplus/msm8998-common/proprietary/vendor/bin/time_daemon:system/vendor/bin/time_daemon \
-    vendor/oneplus/msm8998-common/proprietary/vendor/bin/wcnss_filter:system/vendor/bin/wcnss_filter \
+    vendor/oneplus/msm8998-common/proprietary/vendor/bin/thermal-engine:vendor/bin/thermal-engine \
+    vendor/oneplus/msm8998-common/proprietary/vendor/bin/time_daemon:vendor/bin/time_daemon \
+    vendor/oneplus/msm8998-common/proprietary/vendor/bin/wcnss_filter:vendor/bin/wcnss_filter \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/wifidisplayhalservice:system/vendor/bin/wifidisplayhalservice \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/xtwifi-client:system/vendor/bin/xtwifi-client \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/xtwifi-inet-agent:system/vendor/bin/xtwifi-inet-agent \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/hw/android.hardware.drm@1.0-service.widevine:system/vendor/bin/hw/android.hardware.drm@1.0-service.widevine \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:system/vendor/bin/hw/vendor.display.color@1.0-service \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/hw/vendor.qti.esepowermanager@1.0-service:system/vendor/bin/hw/vendor.qti.esepowermanager@1.0-service \
-    vendor/oneplus/msm8998-common/proprietary/vendor/bin/hw/vendor.qti.gnss@1.0-service:vendor/bin/hw/vendor.qti.gnss@1.0-service \
+    vendor/oneplus/msm8998-common/proprietary/vendor/bin/hw/vendor.qti.gnss@1.0-service:system/vendor/bin/hw/vendor.qti.gnss@1.0-service \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@1.0-service:system/vendor/bin/hw/vendor.qti.hardware.perf@1.0-service \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti:system/vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service:system/vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service \
@@ -426,7 +426,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:system/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:system/vendor/etc/init/vendor.display.color@1.0-service.rc \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc:system/vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc \
-    vendor/oneplus/msm8998-common/proprietary/vendor/etc/init/vendor.qti.gnss@1.0-service.rc:vendor/etc/init/vendor.qti.gnss@1.0-service.rc \
+    vendor/oneplus/msm8998-common/proprietary/vendor/etc/init/vendor.qti.gnss@1.0-service.rc:system/vendor/etc/init/vendor.qti.gnss@1.0-service.rc \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc:system/vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc:system/vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc:system/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc \
@@ -529,7 +529,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/hw/keystore.msm8998.so:system/vendor/lib/hw/keystore.msm8998.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/hw/sound_trigger.primary.msm8998.so:system/vendor/lib/hw/sound_trigger.primary.msm8998.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/hw/vendor.qti.esepowermanager@1.0-impl.so:system/vendor/lib/hw/vendor.qti.esepowermanager@1.0-impl.so \
-    vendor/oneplus/msm8998-common/proprietary/vendor/lib/hw/vendor.qti.gnss@1.0-impl.so:vendor/lib/hw/vendor.qti.gnss@1.0-impl.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/hw/vendor.qti.gnss@1.0-impl.so:system/vendor/lib/hw/vendor.qti.gnss@1.0-impl.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/hw/vendor.qti.hardware.iop@1.0-impl.so:system/vendor/lib/hw/vendor.qti.hardware.iop@1.0-impl.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so:system/vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/hw/vr.msm8998.so:system/vendor/lib/hw/vr.msm8998.so \
@@ -984,7 +984,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/vendor.display.color@1.0_vendor.so:system/vendor/lib/vendor.display.color@1.0_vendor.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/vendor.display.postproc@1.0_vendor.so:system/vendor/lib/vendor.display.postproc@1.0_vendor.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/vendor.qti.esepowermanager@1.0_vendor.so:system/vendor/lib/vendor.qti.esepowermanager@1.0_vendor.so \
-    vendor/oneplus/msm8998-common/proprietary/vendor/lib/vendor.qti.gnss@1.0_vendor.so:vendor/lib/vendor.qti.gnss@1.0_vendor.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/vendor.qti.gnss@1.0_vendor.so:system/vendor/lib/vendor.qti.gnss@1.0_vendor.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/vendor.qti.hardware.alarm@1.0.so:system/vendor/lib/vendor.qti.hardware.alarm@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/vendor.qti.hardware.data.latency@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.data.latency@1.0_vendor.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/vendor.qti.hardware.improvetouch.blobmanager@1.0-service.so:system/vendor/lib/vendor.qti.hardware.improvetouch.blobmanager@1.0-service.so \
@@ -1041,7 +1041,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/hw/keystore.msm8998.so:system/vendor/lib64/hw/keystore.msm8998.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/hw/sound_trigger.primary.msm8998.so:system/vendor/lib64/hw/sound_trigger.primary.msm8998.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so:system/vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so \
-    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so:vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so:system/vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.iop@1.0-impl.so:system/vendor/lib64/hw/vendor.qti.hardware.iop@1.0-impl.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so:system/vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/hw/vr.msm8998.so:system/vendor/lib64/hw/vr.msm8998.so \
@@ -1251,7 +1251,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/vendor.display.color@1.0_vendor.so:system/vendor/lib64/vendor.display.color@1.0_vendor.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/vendor.display.postproc@1.0_vendor.so:system/vendor/lib64/vendor.display.postproc@1.0_vendor.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/vendor.qti.esepowermanager@1.0_vendor.so:system/vendor/lib64/vendor.qti.esepowermanager@1.0_vendor.so \
-    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/vendor.qti.gnss@1.0_vendor.so:vendor/lib64/vendor.qti.gnss@1.0_vendor.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/vendor.qti.gnss@1.0_vendor.so:system/vendor/lib64/vendor.qti.gnss@1.0_vendor.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/vendor.qti.hardware.alarm@1.0.so:system/vendor/lib64/vendor.qti.hardware.alarm@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/vendor.qti.hardware.data.latency@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.data.latency@1.0_vendor.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/vendor.qti.hardware.improvetouch.blobmanager@1.0-service.so:system/vendor/lib64/vendor.qti.hardware.improvetouch.blobmanager@1.0-service.so \
