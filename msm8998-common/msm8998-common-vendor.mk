@@ -41,8 +41,6 @@ PRODUCT_PACKAGES += \
     libloc_api_v02 \
     libthermalclient \
     libtime_genoff \
-    qcnvitems \
-    qcrilhook \
     WfdCommon \
     org.simalliance.openmobileapi
 
@@ -129,6 +127,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/oneplus/msm8998-common/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
     vendor/oneplus/msm8998-common/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
+    vendor/oneplus/msm8998-common/proprietary/framework/qcnvitems.jar:system/framework/qcnvitems.jar \
+    vendor/oneplus/msm8998-common/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
     vendor/oneplus/msm8998-common/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/oneplus/msm8998-common/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/oneplus/msm8998-common/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
