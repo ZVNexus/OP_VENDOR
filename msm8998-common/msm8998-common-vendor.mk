@@ -217,7 +217,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/qvop-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/qvop-daemon \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/sensors.qcom:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qcom \
-    vendor/oneplus/msm8998-common/proprietary/vendor/bin/slim_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/slim_daemon \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/spdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/spdaemon \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
     vendor/oneplus/msm8998-common/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
