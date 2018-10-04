@@ -19,6 +19,18 @@ LOCAL_PATH := $(call my-dir)
 ifneq ($(filter cheeseburger dumpling,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := IFAAService
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/priv-app/IFAAService/IFAAService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := dashd
 LOCAL_MODULE_OWNER := oneplus
 LOCAL_MODULE_PATH := $(TARGET_ROOT_OUT_SBIN)
@@ -28,6 +40,8 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := EXECUTABLES
 include $(BUILD_PREBUILT)
 
+
+ifeq ($(QCPATH),)
 include $(CLEAR_VARS)
 LOCAL_MODULE := com.qualcomm.qti.ant@1.0
 LOCAL_MODULE_OWNER := oneplus
@@ -170,18 +184,6 @@ LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := IFAAService
-LOCAL_MODULE_OWNER := oneplus
-LOCAL_SRC_FILES := proprietary/priv-app/IFAAService/IFAAService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := qcrilmsgtunnel
 LOCAL_MODULE_OWNER := oneplus
 LOCAL_SRC_FILES := proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
@@ -191,6 +193,30 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := QtiTelephonyService
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/vendor/app/QtiTelephonyService/QtiTelephonyService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_VENDOR_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := WfdService
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/vendor/app/WfdService/WfdService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -242,18 +268,6 @@ LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := QtiTelephonyService
-LOCAL_MODULE_OWNER := oneplus
-LOCAL_SRC_FILES := proprietary/vendor/app/QtiTelephonyService/QtiTelephonyService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := TimeService
 LOCAL_MODULE_OWNER := oneplus
 LOCAL_SRC_FILES := proprietary/vendor/app/TimeService/TimeService.apk
@@ -266,14 +280,13 @@ LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := WfdService
+LOCAL_MODULE := WfdCommon
 LOCAL_MODULE_OWNER := oneplus
-LOCAL_SRC_FILES := proprietary/vendor/app/WfdService/WfdService.apk
+LOCAL_SRC_FILES := proprietary/vendor/framework/WfdCommon.jar
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
 LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
@@ -299,16 +312,11 @@ LOCAL_MODULE_SUFFIX := .jar
 LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := WfdCommon
-LOCAL_MODULE_OWNER := oneplus
-LOCAL_SRC_FILES := proprietary/vendor/framework/WfdCommon.jar
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_MODULE_SUFFIX := .jar
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_PREBUILT)
+endif
+
+ifneq ($(TARGET_HAVE_QC_PERF),true)
+
+endif
 
 $(shell mkdir -p $(TARGET_OUT_VENDOR)/lib/egl && pushd $(TARGET_OUT_VENDOR)/lib > /dev/null && ln -sf egl/libEGL_adreno.so libEGL_adreno.so && popd > /dev/null)
 $(shell mkdir -p $(TARGET_OUT_VENDOR)/lib64/egl && pushd $(TARGET_OUT_VENDOR)/lib64 > /dev/null && ln -sf egl/libEGL_adreno.so libEGL_adreno.so && popd > /dev/null)
