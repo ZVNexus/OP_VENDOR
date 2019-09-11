@@ -918,7 +918,6 @@ PRODUCT_PACKAGES += \
     CNEService \
     IFAAService \
     WfdService \
-    com.qualcomm.location \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
