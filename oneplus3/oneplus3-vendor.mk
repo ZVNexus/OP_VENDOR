@@ -67,13 +67,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/framework/izat.xt.srv.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/izat.xt.srv.jar \
     vendor/oneplus/oneplus3/proprietary/framework/uimlpalibrary.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/uimlpalibrary.jar \
     vendor/oneplus/oneplus3/proprietary/lib/TC_Bayer_Converter_v6_core_opt.bin:$(TARGET_COPY_OUT_SYSTEM)/lib/TC_Bayer_Converter_v6_core_opt.bin \
-    vendor/oneplus/oneplus3/proprietary/lib/extractors/libmmparserextractor.so:$(TARGET_COPY_OUT_SYSTEM)/lib/extractors/libmmparserextractor.so \
     vendor/oneplus/oneplus3/proprietary/lib/libFNVfbEngineHAL.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libFNVfbEngineHAL.so \
     vendor/oneplus/oneplus3/proprietary/lib/lib_oneplus_md.so:$(TARGET_COPY_OUT_SYSTEM)/lib/lib_oneplus_md.so \
     vendor/oneplus/oneplus3/proprietary/lib/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdiag_system.so \
     vendor/oneplus/oneplus3/proprietary/lib/libmm-qcamera.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmm-qcamera.so \
-    vendor/oneplus/oneplus3/proprietary/lib/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmosal.so \
-    vendor/oneplus/oneplus3/proprietary/lib/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmparser_lite.so \
     vendor/oneplus/oneplus3/proprietary/lib/libqomx_core.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqomx_core.so \
     vendor/oneplus/oneplus3/proprietary/lib/qpd_dspcl_v2.bin:$(TARGET_COPY_OUT_SYSTEM)/lib/qpd_dspcl_v2.bin \
     vendor/oneplus/oneplus3/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/com.qualcomm.qti.ant@1.0.so \
@@ -83,7 +80,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/lib64/lib_fpc_tac_shared.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/lib_fpc_tac_shared.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdiag_system.so \
     vendor/oneplus/oneplus3/proprietary/lib64/liblocationservice_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/liblocationservice_jni.so \
-    vendor/oneplus/oneplus3/proprietary/lib64/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmmosal.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libqmi_cci_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqmi_cci_system.so \
     vendor/oneplus/oneplus3/proprietary/lib64/librcc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/librcc.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libxt_native.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxt_native.so \
