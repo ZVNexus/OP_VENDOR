@@ -53,3 +53,24 @@ cc_prebuilt_library_shared {
 	prefer: true,
 	soc_specific: true,
 }
+
+android_app_import {
+	name: "com.qualcomm.location",
+	owner: "qcom",
+	apk: "proprietary/system/priv-app/com.qualcomm.location/com.qualcomm.location.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "xtra_t_app",
+	owner: "qcom",
+	apk: "proprietary/system/priv-app/xtra_t_app/xtra_t_app.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
