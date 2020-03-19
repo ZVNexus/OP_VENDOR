@@ -21,6 +21,7 @@ PRODUCT_PACKAGES += \
     libgpustats
 
 PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/proprietary/product,$(TARGET_COPY_OUT_PRODUCT)) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/proprietary/system,$(TARGET_COPY_OUT_SYSTEM)) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/proprietary/vendor/bin,$(TARGET_COPY_OUT_VENDOR)/bin) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/proprietary/vendor/etc,$(TARGET_COPY_OUT_VENDOR)/etc) \
