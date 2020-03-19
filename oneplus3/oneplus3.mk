@@ -17,16 +17,11 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_PACKAGES += \
     CneApp \
-    com.qualcomm.location \
     libantradio \
-    libgpustats \
-    xtra_t_app
+    libgpustats
 
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/proprietary/system/etc,$(TARGET_COPY_OUT_SYSTEM)/etc) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/proprietary/system/framework,$(TARGET_COPY_OUT_SYSTEM)/framework) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/proprietary/system/lib,$(TARGET_COPY_OUT_SYSTEM)/lib) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/proprietary/system/lib64,$(TARGET_COPY_OUT_SYSTEM)/lib64) \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/proprietary/system,$(TARGET_COPY_OUT_SYSTEM)) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/proprietary/vendor/bin,$(TARGET_COPY_OUT_VENDOR)/bin) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/proprietary/vendor/etc,$(TARGET_COPY_OUT_VENDOR)/etc) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/proprietary/vendor/firmware,$(TARGET_COPY_OUT_VENDOR)/firmware) \
