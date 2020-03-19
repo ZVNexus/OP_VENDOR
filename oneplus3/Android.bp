@@ -74,3 +74,14 @@ android_app_import {
 		enabled: false,
 	},
 }
+
+android_app_import {
+	name: "CneApp",
+	owner: "oneplus",
+	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
