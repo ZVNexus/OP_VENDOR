@@ -59,8 +59,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/etc/firmware/tp/fw_synaptics_15801b.img:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/tp/fw_synaptics_15801b.img \
     vendor/oneplus/oneplus3/proprietary/etc/firmware/tp/fw_synaptics_15811.img:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/tp/fw_synaptics_15811.img \
     vendor/oneplus/oneplus3/proprietary/etc/firmware/tp/fw_synaptics_touchkey.img:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/tp/fw_synaptics_touchkey.img \
-    vendor/oneplus/oneplus3/proprietary/etc/permissions/com.qti.location.sdk.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qti.location.sdk.xml \
-    vendor/oneplus/oneplus3/proprietary/etc/permissions/com.qualcomm.location.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.location.xml \
     vendor/oneplus/oneplus3/proprietary/etc/permissions/izat.xt.srv.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/izat.xt.srv.xml \
     vendor/oneplus/oneplus3/proprietary/etc/permissions/lpa.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/lpa.xml \
     vendor/oneplus/oneplus3/proprietary/etc/permissions/privapp-permissions-com.qualcomm.location.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.qualcomm.location.xml \
@@ -814,7 +812,6 @@ PRODUCT_PACKAGES += \
     libthermalclient \
     SoterService \
     IFAAService \
-    com.qualcomm.location \
     CneApp \
     IWlanService \
     TimeService \
